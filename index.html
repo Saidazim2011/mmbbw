@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <img src="MOVIES! (1).png" alt="Movies!" class="logo">
+    </header>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Enter your movie name" class="pon">
+      <select id="genreSelect" class="lala">
+          <option value="">All</option>
+          <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Animation">Animation</option>
+          <option value="Bioghraphy">Bioghraphy</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Crime">Crime</option>
+          <option value="Documentary">Documentary</option>
+          <option value="Drama">Drama</option>
+          <option value="Family">Family</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="History">History</option>      
+          <option value="Horror">Horror</option>
+          <option value="Music">Music</option>
+          <option value="Musical">Musical</option>
+          <option value="Mystery">Mystery</option>
+      </select>
+      <select id="sortSelect" class="ponnel">
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+          <option value="10-1">10-1</option>
+          <option value="1-10">1-10</option>
+          <option value="Max-year 2018-2000">Max-year 2018-2000</option>
+          <option value="Min-year 2000-2018">Min-year 2000-2018</option>
+      </select>
+      <button id="searchBtn" class="button">Search</button>
+      <span id="resultContainer" class="result">Results: 0</span>
+    </div>
+    <div class="container-movie"></div>
+    <script src="movies.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
